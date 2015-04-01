@@ -62,7 +62,7 @@ section:nth-child(even) {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: #333;
+	background-color: rgba(100, 100, 100, 0.5);
 	color: #EEE;
 	padding: 10px;
 	z-index: 1;
@@ -85,6 +85,26 @@ section:nth-child(even) {
 .portfolio-game {
 	font-family: 'Roboto Slab', serif;
 	font-size: 22px;
+}
+
+.portfolio-switch {
+	position: absolute;
+	right: 0;
+	z-index: 3;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 50px 50px 0;
+	border-color: transparent #555 transparent transparent;
+	transition: border-color 0.2s ease;
+	-webkit-transition: border-color 0.2s ease;
+    -moz-transition: border-color 0.2s ease;
+    -o-transition: border-color 0.2s ease;
+}
+
+.portfolio-switch:hover {
+	border-color: transparent #333 transparent transparent;
+	cursor: pointer;
 }
 
 .clearfix:after {

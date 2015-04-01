@@ -4,12 +4,17 @@ $(document).ready(function() {
 		$(this).addClass('active');
 	});
 
-	$('.portfolio-item').click(function() {
-		$(this).find('.front div').animate({
-			opacity: ($(this).find('.front div').css('opacity') == 1) ? 0 : 1
+	$('.portfolio-switch').click(function() {
+		$(this).parent().find('.front div').animate({
+			opacity: ($(this).parent().find('.front div').css('opacity') == 1) ? 0 : 1
 		});
-		$(this).find('img').animate({
-			opacity: ($(this).find('img').css('opacity') == 1) ? 0.3 : 1
+		$(this).parent().find('img').animate({
+			opacity: ($(this).parent().find('img').css('opacity') == 1) ? 0.3 : 1
 		});
+		if ($(this).parent().find('.front').css('z-index') == 2) {
+			$(this).parent().find('.front').css('z-index', 1);
+		} else {
+			$(this).parent().find('.front').css('z-index', 2);
+		}
 	});
 });
