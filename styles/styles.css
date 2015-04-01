@@ -1,0 +1,75 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background-color: #666;
+}
+
+h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 28px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	color: #CCC;
+}
+
+.navbar {
+	border: 0;
+}
+
+.navbar-inverse {
+	  background-image: linear-gradient(to bottom, #444 0%, #444 100%);
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a {
+	  background-image: linear-gradient(to bottom, #222 0, #222 100%);
+}
+
+section {
+	color: #BBB;
+	width: 61%;
+	padding: 40px;
+	margin: 0 auto;
+	background-color: #777;
+	min-height: 400px;
+	min-width: 200px;
+}
+
+@media screen and (max-width: 400px) {
+	section {
+		width: 100%;
+	}
+}
+
+section:nth-child(even) {
+	background-color: #888;	
+}
+
+.portfolio-item {
+	position: relative;
+	margin: 1%;
+	width: 48%;
+	float: left;
+}
+
+.portfolio-item img {
+	width: 100%
+}
+
+.portfolio-description {
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(100, 100, 100, 0.5);
+	width: 100%;
+	padding: 5px;
+}
+
+.portfolio-game {
+	font-family: 'Roboto Slab', serif;
+	font-size: 22px;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
