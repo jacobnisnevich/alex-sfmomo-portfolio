@@ -7,8 +7,8 @@ body {
 h1 {
 	font-family: 'Roboto Slab', serif;
 	font-size: 28px;
-	margin-top: 50px;
-	margin-bottom: 30px;
+	margin-top: 30px;
+	margin-bottom: 5px;
 	color: #CCC;
 }
 
@@ -28,6 +28,7 @@ section {
 	color: #BBB;
 	width: 61%;
 	padding: 40px;
+	padding-bottom: 20px;
 	margin: 0 auto;
 	background-color: #777;
 	min-height: 400px;
