@@ -5,5 +5,11 @@ $(document).ready(function() {
 	});
 
 	$('.portfolio-item').click(function() {
-		$(this).find('.front').animate({opacity:($(this).find('.front').css('opacity')==1)?0:1});	});
+		$(this).find('.front div').animate({
+			opacity: ($(this).find('.front div').css('opacity') == 1) ? 0 : 1
+		});
+		$(this).find('img').animate({
+			opacity: ($(this).find('img').css('opacity') == 1) ? 0.3 : 1
+		});
+	});
 });
