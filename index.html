@@ -8,6 +8,9 @@
 
 	<!-- JQuery JS -->
 	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/jquery.flip.min.js"></script>
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="styles/bootstrap.min.css">
@@ -15,7 +18,6 @@
 	<link rel="stylesheet" href="styles/scrolling-nav.css">
 	<!-- Bootstrap JS -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.min.js"></script>
 	<script src="js/scrolling-nav.js"></script>
 
 	<!-- Google Fonts -->
@@ -39,17 +41,17 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand page-scroll" href="#about">Alex Nisnevich</a>
+				<a class="navbar-brand" href="#">Alex Nisnevich</a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li class="active">
+					<!--<li>
 						<a href="#about" class="page-scroll">About</a>
 					</li>
 					<li>
 						<a href="#purpose" class="page-scroll">Statement of Purpose</a>
-					</li>
-					<li>
+					</li>-->
+					<li class="active">
 						<a href="#portfolio" class="page-scroll">Portfolio</a>
 					</li>
 				</ul>
@@ -57,17 +59,18 @@
 		</div>
 	</nav>
 
-	<!-- About/Home -->
+<!--
+	<! About/Home >
 	<section id="about">
 		<div class="title">
 			<h1>About</h1>
 		</div>
 		<div class="content">
-			
+
 		</div>
 	</section>
 
-	<!-- Statement of Purpose -->
+	<! Statement of Purpose >
 	<section id="purpose">
 		<div class="title">
 			<h1>Statement of Purpose</h1>
@@ -76,6 +79,7 @@
 			
 		</div>
 	</section>
+-->
 
 	<!-- Portfolio -->
 	<section id="portfolio">
@@ -85,31 +89,51 @@
 		<div class="content">
 			<div class="portfolio-container clearfix">
 				<div class="portfolio-item">
-					<img src="images/portfolio-untrusted.png"/>
-					<div class="portfolio-description">
-						<div class="portfolio-game">Untrusted</div>
-						<div class="portfolio-about">Game about hacking</div>
+					<div class="front">
+						<img src="images/portfolio-untrusted.png"/>
+						<div class="portfolio-description">
+							<div class="portfolio-game">Untrusted</div>
+							<div class="portfolio-about">Short description</div>
+						</div>
+					</div>
+					<div class="back">
+						Back
 					</div>
 				</div>
 				<div class="portfolio-item">
-					<img src="images/portfolio-shattered.png"/>
-					<div class="portfolio-description">
-						<div class="portfolio-game">Shattered Worlds</div>
-						<div class="portfolio-about">Game about hacking</div>
+					<div class="front">	
+						<img src="images/portfolio-shattered.png"/>
+						<div class="portfolio-description">
+							<div class="portfolio-game">Shattered Worlds</div>
+							<div class="portfolio-about">Short description</div>
+						</div>
+					</div>
+					<div class="back">
+						Back
 					</div>
 				</div>
 				<div class="portfolio-item">
-					<img src="images/portfolio-notasoul.png"/>
-					<div class="portfolio-description">
-						<div class="portfolio-game">Not A Soul in the World</div>
-						<div class="portfolio-about">Game about hacking</div>
+					<div class="front">	
+						<img src="images/portfolio-notasoul.png"/>
+						<div class="portfolio-description">
+							<div class="portfolio-game">Not A Soul in the World</div>
+							<div class="portfolio-about">Short description</div>
+						</div>
+					</div>
+					<div class="back">
+						Back
 					</div>
 				</div>
 				<div class="portfolio-item">
-					<img src="images/portfolio-asnack.png"/>
-					<div class="portfolio-description">
-						<div class="portfolio-game">A Snack in Every Port</div>
-						<div class="portfolio-about">Game about hacking</div>
+					<div class="front">	
+						<img src="images/portfolio-asnack.png"/>
+						<div class="portfolio-description">
+							<div class="portfolio-game">A Snack in Every Port</div>
+							<div class="portfolio-about">Short description</div>
+						</div>
+					</div>
+					<div class="back">
+						Back
 					</div>
 				</div>
 			</div>
