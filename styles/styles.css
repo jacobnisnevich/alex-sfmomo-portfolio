@@ -98,13 +98,39 @@ section:nth-child(even) {
 	border-color: transparent #555 transparent transparent;
 	transition: border-color 0.2s ease;
 	-webkit-transition: border-color 0.2s ease;
-    -moz-transition: border-color 0.2s ease;
-    -o-transition: border-color 0.2s ease;
+	-moz-transition: border-color 0.2s ease;
+	-o-transition: border-color 0.2s ease;
 }
 
 .portfolio-switch:hover {
 	border-color: transparent #333 transparent transparent;
 	cursor: pointer;
+}
+
+.buttonContainer {
+	text-align: center;
+	margin: 10px 0px;
+}
+
+.buttonLink {
+	color: #EEE;
+	background-color: #444;
+	padding: 10px;
+	transition: background-color 0.2s ease;
+	-webkit-transition: background-color 0.2s ease;
+	-moz-transition: background-color 0.2s ease;
+	-o-transition: background-color 0.2s ease;
+}
+
+.buttonLink:hover {
+	color: #EEE;
+	background-color: #222;
+	text-decoration: none;
+}
+
+.buttonLink:visited {
+	color: #EEE;
+	text-decoration: none;
 }
 
 .clearfix:after {
