@@ -25,17 +25,17 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
+	<!-- Lightbox CSS -->
+	<link href="styles/jquery.fancybox.css" rel="stylesheet" />
+
+	<!-- Fancybox JS -->
+	<script src="js/jquery.fancybox.pack.js"></script>
+
 	<!-- Portfolio CSS -->
 	<link rel="stylesheet" href="styles/styles.css">
 
 	<!-- Portfolio JS -->
 	<script src="js/scripts.js"></script>
-
-	<!-- Lightbox CSS -->
-	<link href="styles/lightbox.css" rel="stylesheet" />
-
-	<!-- Lightbox JS -->
-	<script src="js/lightbox.min.js"></script>
 </head>
 <body>
 	<!-- Navbar -->
@@ -110,13 +110,13 @@
 						<div class="buttonContainer">
 							<a href="http://alexnisnevich.github.io/untrusted/" target="_blank" class="buttonLink"><b>Play</b></a>
 
-							<a href="img/untrusted-video.mp4" data-lightbox="untrusted-videos" class="buttonLink">Videos</a>
+							<a class="fancybox-untrusted-video buttonLink" href="img/untrusted-video.mp4" data-fancybox-type="iframe">Video</a>
 
-							<a href="img/untrusted-1.png" data-lightbox="untrusted-screenshots" class="buttonLink">Screenshots</a>
-							<a href="img/untrusted-2.png" data-lightbox="untrusted-screenshots"></a>
-							<a href="img/untrusted-3.png" data-lightbox="untrusted-screenshots"></a>
+							<a class="fancybox buttonLink" href="img/untrusted-1.png" rel="untrusted-screenshots">Screenshots</a>
+							<a class="fancybox" href="img/untrusted-2.png" rel="untrusted-screenshots"></a>
+							<a class="fancybox" href="img/untrusted-3.png" rel="untrusted-screenshots"></a>
 
-							<a href="img/untrusted-1.jpg" data-lightbox="untrusted-press" class="buttonLink">Press</a>
+							<a class="fancybox-untrusted-press buttonLink" href="reviews.html" data-fancybox-type="iframe">Press</a>
 						</div>
 					</div>
 				</div>
@@ -135,11 +135,9 @@
 						<div class="buttonContainer">
 							<a href="http://alex.nisnevich.com/creations/NotASoul/" target="_blank" class="buttonLink"><b>Play</b></a>
 
-							<a href="img/not-a-soul-video.mp4" data-lightbox="not-a-soul-videos" class="buttonLink">Videos</a>
-
-							<a href="img/not-a-soul-1.png" data-lightbox="not-a-soul-screenshots" class="buttonLink">Screenshots</a>
-							<a href="img/not-a-soul-2.png" data-lightbox="not-a-soul-screenshots"></a>
-							<a href="img/not-a-soul-3.png" data-lightbox="not-a-soul-screenshots"></a>
+							<a class="fancybox buttonLink" href="img/not-a-soul-1.png" rel="not-a-soul-screenshots">Screenshots</a>
+							<a class="fancybox" href="img/not-a-soul-2.png" rel="not-a-soul-screenshots"></a>
+							<a class="fancybox" href="img/not-a-soul-3.png" rel="not-a-soul-screenshots"></a>
 						</div>
 					</div>
 				</div>
@@ -158,10 +156,8 @@
 						<div class="buttonContainer">
 							<a href="http://www.appetiteobscure.org/potlucks/no-8/" target="_blank" class="buttonLink"><b>Event Synopsis</b></a>
 
-							<a href="img/a-snack-video.mp4" data-lightbox="a-snack-videos" class="buttonLink">Videos</a>
-
-							<a href="img/a-snack-1.jpg" data-lightbox="a-snack-screenshots" class="buttonLink">Photos</a>
-							<a href="img/a-snack-2.jpg" data-lightbox="a-snack-screenshots"></a>
+							<a class="fancybox buttonLink" href="img/a-snack-1.jpg" rel="a-snack-screenshots">Photos</a>
+							<a class="fancybox" href="img/a-snack-2.jpg" rel="a-snack-screenshots"></a>
 						</div>
 					</div>
 				</div>
@@ -180,13 +176,13 @@
 						<div class="buttonContainer">
 							<a href="http://alexnisnevich.github.io/ld30/" target="_blank" class="buttonLink"><b>Play</b></a>
 
-							<a href="https://vimeo.com/104579922" target="_blank" class="buttonLink">Video</a>
+							<a class="vimeo buttonLink" href="http://player.vimeo.com/video/104579922?title=0&amp;byline=0&amp;portrait=0">Video</a>
 
-							<a href="img/shattered-worlds-1.jpg" data-lightbox="shattered-worlds-screenshots" class="buttonLink">Screenshots</a>
-							<a href="img/shattered-worlds-2.jpg" data-lightbox="shattered-worlds-screenshots"></a>
-							<a href="img/shattered-worlds-3.jpg" data-lightbox="shattered-worlds-screenshots"></a>
+							<a class="fancybox buttonLink" href="img/shattered-worlds-1.jpg" rel="shattered-worlds-screenshots">Screenshots</a>
+							<a class="fancybox" href="img/shattered-worlds-2.jpg" rel="shattered-worlds-screenshots"></a>
+							<a class="fancybox" href="img/shattered-worlds-3.jpg" rel="shattered-worlds-screenshots"></a>
 
-							<a href="http://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=3353" target="_blank" class="buttonLink">Reviews</a>
+							<a class="vimeo buttonLink" href="http://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=3353">Reviews</a>
 						</div>
 					</div>
 				</div>

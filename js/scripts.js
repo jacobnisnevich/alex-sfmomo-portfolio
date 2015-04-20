@@ -1,4 +1,29 @@
 $(document).ready(function() {
+	$(".fancybox").fancybox();
+
+	$(".fancybox-untrusted-press").fancybox({
+		width: 800,
+		height: 300,
+		'autoSize': false, 
+		type: 'iframe',
+		fitToView : false
+	});
+
+	$(".fancybox-untrusted-video").fancybox({
+		width: 960,
+		height: 540,
+		'autoSize': false, 
+		type: 'iframe',
+		fitToView : false
+	});
+
+	$(".vimeo").fancybox({
+		width: 960,
+		height: 540,
+		type: 'iframe',
+		fitToView : false
+	});
+
 	$('.nav li').click(function() {
 		$('.active').removeClass('active');
 		$(this).addClass('active');
