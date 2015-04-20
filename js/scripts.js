@@ -4,7 +4,7 @@ $(document).ready(function() {
 		$(this).addClass('active');
 	});
 
-	$('.portfolio-switch').click(function() {
+	$('.portfolio-switch, .front').click(function() {
 		$(this).parent().find('.front div').animate({
 			opacity: ($(this).parent().find('.front div').css('opacity') == 1) ? 0 : 1
 		});
