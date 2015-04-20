@@ -84,6 +84,7 @@ section:nth-child(even) {
 	background-color: rgba(100, 100, 100, 0.5);
 	width: 100%;
 	padding: 10px;
+	color: rgb(234, 232, 186);
 }
 
 .portfolio-game {
@@ -146,4 +147,23 @@ section:nth-child(even) {
 
 .fancybox-nav span {
 	visibility: visible;
+}
+
+.press-box {
+	margin: 20px;
+	color: #CCC;
+	background-color: #777;
+}
+
+.press-box a {
+	color: #CCC;
+}
+
+.press-box a:hover {
+	text-decoration: none;
+}
+
+.press-box h1 {
+	margin-top: 0;
+	margin-bottom: 0.6em;
 }

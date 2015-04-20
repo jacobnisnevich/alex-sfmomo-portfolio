@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$(".fancybox").fancybox();
 
 	$(".fancybox-untrusted-press").fancybox({
-		width: 800,
+		width: 600,
 		height: 300,
 		'autoSize': false, 
 		type: 'iframe',
