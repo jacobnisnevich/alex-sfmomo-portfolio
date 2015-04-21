@@ -14,7 +14,18 @@ $(document).ready(function() {
 		height: 540,
 		'autoSize': false, 
 		type: 'iframe',
-		fitToView : false
+		fitToView : false,
+		beforeLoad: function() {
+			var el, id = $(this.element).data('title-id');
+
+			if (id) {
+				el = $('#' + id);
+			
+				if (el.length) {
+					this.title = el.html();
+				}
+			}
+		}
 	});
 
 	$(".vimeo").fancybox({
