@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$(".fancybox").fancybox();
 
 	$(".fancybox-untrusted-press").fancybox({
-		width: 800,
+		width: 600,
 		height: 300,
 		'autoSize': false, 
 		type: 'iframe',
@@ -14,7 +14,18 @@ $(document).ready(function() {
 		height: 540,
 		'autoSize': false, 
 		type: 'iframe',
-		fitToView : false
+		fitToView : false,
+		beforeLoad: function() {
+			var el, id = $(this.element).data('title-id');
+
+			if (id) {
+				el = $('#' + id);
+			
+				if (el.length) {
+					this.title = el.html();
+				}
+			}
+		}
 	});
 
 	$(".vimeo").fancybox({
